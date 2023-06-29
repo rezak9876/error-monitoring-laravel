@@ -12,7 +12,7 @@ class ErrorReport
 
     public function __construct()
     {
-        $packageName = 'error-monitoring';
+        $packageName = 'error-monitoring-laravel';
         $this->token =config($packageName.'.token');
     }
 

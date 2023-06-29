@@ -20,7 +20,7 @@ add `ERROR_MONITORING=true` in your .env file
 
 
 #### set your token in published file
-in config/error-monitoring.php set your token
+in config/error-monitoring-laravel.php set your token
 ```php 
 <?php
 return [

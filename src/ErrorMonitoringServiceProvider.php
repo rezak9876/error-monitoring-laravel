@@ -14,7 +14,7 @@ class ErrorMonitoringServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/config/error-monitoring.php'=> config_path('error-monitoring.php'),
+            __DIR__ . '/config/error-monitoring-laravel.php'=> config_path('error-monitoring-laravel.php'),
         ]);
     }
 
