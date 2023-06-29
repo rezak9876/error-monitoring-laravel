@@ -1,6 +1,6 @@
 <?php
 
-namespace Binism\ErrorMonitoring;
+namespace RezaK\ErrorMonitoring;
 
 class Monitor
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Binism\ErrorMonitoring;
+namespace RezaK\ErrorMonitoring;
 
-use Binism\ErrorMonitoring\Http\PrepareBody;
-use Binism\ErrorMonitoring\Http\SendError;
+use RezaK\ErrorMonitoring\Http\PrepareBody;
+use RezaK\ErrorMonitoring\Http\SendError;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\URL;
 

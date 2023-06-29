@@ -13,7 +13,7 @@
 `composer require bin-ism/error-monitoring:dev-master`
 
 #### publish vendor
-php artisan vendor:publish --provider="Binism\ErrorMonitoring\ErrorMonitoringServiceProvider"
+php artisan vendor:publish --provider="RezaK\ErrorMonitoring\ErrorMonitoringServiceProvider"
 
 #### environment config
 add `ERROR_MONITORING=true` in your .env file
@@ -33,7 +33,7 @@ in app/Exceptions/Handler.php add blow code
  public function register()
     {
         $this->reportable(function (Throwable $e) {
-            \Binism\ErrorMonitoring\Monitor::reportError($e);
+            \RezaK\ErrorMonitoring\Monitor::reportError($e);
         });
     }
 ```

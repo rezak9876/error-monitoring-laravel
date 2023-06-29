@@ -1,6 +1,6 @@
 <?php
 
-namespace Binism\ErrorMonitoring\Http;
+namespace RezaK\ErrorMonitoring\Http;
 
 use Illuminate\Support\Facades\URL;
 
