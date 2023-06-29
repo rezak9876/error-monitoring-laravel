@@ -10,7 +10,7 @@
  in your account , create a project and get specific token
  http://error-monitoring.pzhame.ir
 #### install package via composer
-`composer require bin-ism/error-monitoring:dev-master`
+`composer require rezak/error-monitoring-laravel:dev-master`
 
 #### publish vendor
 php artisan vendor:publish --provider="RezaK\ErrorMonitoringLaravel\ErrorMonitoringServiceProvider"
