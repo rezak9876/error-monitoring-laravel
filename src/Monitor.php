@@ -1,6 +1,6 @@
 <?php
 
-namespace RezaK\ErrorMonitoring;
+namespace RezaK\ErrorMonitoringLaravel;
 
 class Monitor
 {

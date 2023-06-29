@@ -1,6 +1,6 @@
 <?php
 
-namespace RezaK\ErrorMonitoring\Http;
+namespace RezaK\ErrorMonitoringLaravel\Http;
 
 use Illuminate\Support\Facades\URL;
 

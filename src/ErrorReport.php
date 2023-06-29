@@ -1,9 +1,9 @@
 <?php
 
-namespace RezaK\ErrorMonitoring;
+namespace RezaK\ErrorMonitoringLaravel;
 
-use RezaK\ErrorMonitoring\Http\PrepareBody;
-use RezaK\ErrorMonitoring\Http\SendError;
+use RezaK\ErrorMonitoringLaravel\Http\PrepareBody;
+use RezaK\ErrorMonitoringLaravel\Http\SendError;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\URL;
 

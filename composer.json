@@ -9,7 +9,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "RezaK\\ErrorMonitoring\\": "src" }
+        "psr-4": { "RezaK\\ErrorMonitoringLaravel\\": "src" }
     },
     "require": {}
 }
