@@ -13,7 +13,7 @@ class SendError
 
     public function send($postFields)
     {
-        return Http::post("http://error-monitoring.pzhame.ir/api/{$this->token}/errors", $postFields);
+        return Http::withOptions(['proxy' => $_SERVER['SERVER_ADDR'] . ':' .  $_SERVER['SERVER_PORT']])
+            ->post("http://error-monitoring.test/api/{$this->token}/errors", $postFields);
     }
-
 }
