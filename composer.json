@@ -11,5 +11,12 @@
     "autoload": {
         "psr-4": { "RezaK\\ErrorMonitoringLaravel\\": "src" }
     },
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RezaK\\ErrorMonitoringLaravel\\ErrorMonitoringServiceProvider"
+            ]
+        }
+    }
 }
