@@ -13,7 +13,9 @@ class SendError
 
     public function send($postFields)
     {
+        $packageName = 'error-monitoring-laravel';
+        $host = config($packageName . '.host');
         return Http::withOptions(['proxy' => $_SERVER['SERVER_ADDR'] . ':' .  $_SERVER['SERVER_PORT']])
-            ->post("http://error-monitoring.test/api/{$this->token}/errors", $postFields);
+            ->post("$host/api/{$this->token}/errors", $postFields);
     }
 }
