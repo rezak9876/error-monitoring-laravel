@@ -18,7 +18,7 @@ class ErrorReport
 
     public function reportError($error)
     {
-        if (env('ERROR_MONITORING') and $this->token) {
+        if (env('ERROR_MONITORING_LARAVEL') and $this->token) {
 
             //request body param
             $postFields = (new PrepareBody($error))->getPostFields();
