@@ -27,12 +27,15 @@ class PrepareBody
         $trace = $error->getTrace();
         foreach ($trace as $key => $t) {
             //???
-            if (array_key_exists('file', $trace[$key]))
-                $trace[$key]['file'] = str_replace(base_path(), "basePath", $t['file']);
+            $traceKey = $trace[$key];
+            if (array_key_exists('file', $traceKey))
+                $traceKey['file'] = str_replace(base_path(), "basePath", $t['file']);
 
-            foreach ($trace[$key]['args'] as $argkey => $arg) {
-                if (gettype($arg) === 'string')
-                    $trace[$key]['args'][$argkey] = str_replace(base_path(), "basePath", $arg);
+            if (array_key_exists('args', $traceKey)) {
+                foreach ($traceKey['args'] as $argkey => $arg) {
+                    if (gettype($arg) === 'string')
+                        $traceKey['args'][$argkey] = str_replace(base_path(), "basePath", $arg);
+                }
             }
         }
 
